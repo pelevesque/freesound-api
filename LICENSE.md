@@ -1,6 +1,6 @@
 # License
 
-freesound API uses the MIT open source license.
+freesound-api uses the MIT open source license.
 
 ## MIT License (MIT)
 

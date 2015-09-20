@@ -15,7 +15,6 @@ namespace Pel\Helper;
 
 class FreesoundAPI
 {
-
     /**
      * @var  array   error from the last API call
      *

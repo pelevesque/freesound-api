@@ -1,31 +1,31 @@
-# freesound API
+# freesound-api
 
 ## About
 
-freesound API is a PHP class used to consume freesounds's API.
+A PSR-4 PHP class to consume freesound's API.
 
 [http://www.freesound.org/](http://www.freesound.org/)
 
 ## Usage
 
-Here's an example of how to use the freesound API class.
+Here's an example of how to use the freesound-api class.
 
-    include('freesound_API.php');
+```php
+include('FreesoundAPI.php');
 
-    $api_key = 'your_api_key_here';
+$api_key = 'g1d11a5117a4143be0f5f';
+$curl_options = array();
 
-    $api = new freesound_API($api_key);
+$api = new Pel\Helper\FreesoundAPI($api_key, $curl_options);
 
-    $result = $api->sound(123);
+$result = $api->sound(123);
 
-    if ($result === FALSE)
-    {
-        echo 'Error code = ' . $api->error['code'] . '<br/>';
-        echo 'Error message = ' . $api->error['message'] . '<br/>';
-    }
-    else
-    {
-        var_dump($result);
-    }
+if ($result === FALSE) {
+    echo 'Error code = ' . $api->error['code'] . '<br/>';
+    echo 'Error message = ' . $api->error['message'] . '<br/>';
+} else {
+    var_dump($result);
+}
+```
 
 Take a look at the class to see all the possible API calls.
