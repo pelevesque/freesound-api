@@ -5,7 +5,7 @@ use Pel\Helper\FreesoundAPI;
 class FreesoundAPITest extends PHPUnit_Framework_TestCase
 {
     protected static function newFreesoundAPI(
-        $api_token = 'api_key',
+        $api_key = 'api_key',
         $curl_options = array()
     ) {
         return new FreesoundAPI(
