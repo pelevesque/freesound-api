@@ -28,4 +28,4 @@ if ($result === FALSE) {
 }
 ```
 
-Take a look at the class to see all the possible API calls.
+Take a look at the class's source code to see all the possible API calls.
